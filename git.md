@@ -1,3 +1,10 @@
+#configuration
+* git config --global branch.autosetuprebase always
+* git config --global color.ui auto
+* git config --global sslVerify false
+* git config --global push.default current
+
+
 #commands
 * rev-parse
 * show
@@ -7,6 +14,7 @@
 * bisect
 * daemon
 * bundle
+* sub-tree
 
 
 #plumbing
@@ -30,12 +38,13 @@
 
 #hooks
 ```ruby
+#!/usr/bin/env ruby
 if File.read(ARGV[0]).strip.include?("monkey") then
-    exit 0
-  else
-    puts "No monkey"
-    exit 1
-  end
+  exit 0
+else
+  puts "No monkey"
+  exit 1
+end
 ``` 
 
 #fun
@@ -64,7 +73,6 @@ if File.read(ARGV[0]).strip.include?("monkey") then
 ** shipper for seg selv
 ** koden kommer etterpå
 
-
-git config branch.autosetuprebase always
-git sub-tree
+#pretty log
+* git log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 
