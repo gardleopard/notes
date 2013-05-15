@@ -1,0 +1,20 @@
+#Tech stack
+* java
+* maven
+* javascript
+* jstestdriver
+* ruby
+* scala
+* sbt
+* node
+* pgsql
+* mysql
+* cassandra
+* scribe
+* sybase
+* kafka
+* solr
+* apache
+* tomcat
+* thrift
+
